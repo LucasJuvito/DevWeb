@@ -13,6 +13,8 @@
     position: fixed;
     background-color: white;
     transition: .5s ease-in-out;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .1);
 }
 
 .transparente{
@@ -144,6 +146,7 @@ section#cursos{
     overflow: hidden;
     border-radius: 10px;
     max-width: 1080px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,.1);
 }
 /* 2 */
 .box-name{
@@ -237,7 +240,7 @@ section#cursos{
 /*CRIADORES
 ------------------------------------------*/
 section#criadores{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bg-criadores.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/bg-criadores.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -275,7 +278,6 @@ section#criadores{
 
 #criadores-articles{
     width: 100%;
-    
 }
 
 .criadores-article{
@@ -286,6 +288,7 @@ section#criadores{
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    box-shadow: 10px 5px 50px black;
 }
 .criadores-article h1{
     font-size: 16px;
@@ -358,6 +361,10 @@ footer{
     margin-bottom: 30px;
 }
 
+#footer-container p{
+    color:rgb(134, 134, 134);
+}
+
 #footer-container a{
     font-size: 25px;
     margin-right: 10px;
@@ -368,36 +375,17 @@ footer{
     margin-right: 0px;
 }
 
-#footer-container #coluna1, #coluna2, #coluna3{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-#footer-container #coluna1 .corpo{
-    text-align: center;
-}
-
 #footer-container a:hover{  
     color:rgb(48, 48, 48);
 }
 
-#footer-container #coluna2 p, h2{
+#footer-container #coluna1, #coluna2, #coluna3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
     text-align: center;
 }
-
-#footer-container #coluna2 p{
-    color:rgb(134, 134, 134);
-}
-
-#footer-container #coluna3 p{
-    text-align: center;
-    color:rgb(134, 134, 134);
-}
-
-#coluna1, #coluna2, #coluna3{
-    width: 150px;
-} 
 
 #footer-container button{
     margin-top: 15px;
@@ -481,4 +469,21 @@ footer{
     .criadores-article:last-of-type{
         margin-right: 0;
     }
+}
+
+/*ESTILIZANDO O SCROLL
+------------------------------------------*/
+
+body::-webkit-scrollbar {
+    width: 9px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgba(173, 173, 173, 0.2);
+}
+
+    body::-webkit-scrollbar-thumb {
+
+background-color: #4d8c12;
+border-radius: 20px;
 }
