@@ -22,3 +22,19 @@ $('a[href^="#"]').on('click', function(e) {
 		scrollTop: targetOffset - 70
 	}, 500);
 });
+
+var botaoMostrar = document.getElementById('btn-carregar');
+var botaoEsconder = document.getElementById('btn-carregar-menos');
+var maisCursos = document.getElementById('mais-cursos');
+
+botaoMostrar.addEventListener('click', function(){
+    maisCursos.classList.remove('invisivel');
+    botaoMostrar.classList.add('invisivel');
+    botaoEsconder.classList.remove('invisivel');
+});
+
+botaoEsconder.addEventListener('click', function(){
+    maisCursos.classList.add('invisivel');
+    botaoMostrar.classList.remove('invisivel');
+    botaoEsconder.classList.add('invisivel');
+});

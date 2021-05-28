@@ -163,6 +163,7 @@ section#cursos{
 /* 4 */
 .box-cover img{
     width: 100%;
+    height: 180px;
     transform: scale(1.1);
     transition: all 300ms ease-in-out;
 }
@@ -217,6 +218,10 @@ section#cursos{
     opacity: 1;
     visibility: visible;
     transform: translate(0, 0);    
+}
+
+.invisivel{
+    display: none;
 }
 
 /* carregar-mais */
@@ -295,7 +300,7 @@ section#criadores{
     font-weight: normal;
     margin-bottom: 20px;
     padding-left: 12px;
-    border-left: 8px solid #ccc;
+    border-left: 8px solid rgb(29, 173, 24);
 }
 .criadores-article .image{
     position: relative;
