@@ -1,3 +1,22 @@
+var btn_menu = document.getElementById('btn_menu');
+var menu = document.getElementById('navbar-menu');
+var links_menu = document.querySelector('#navbar-menu ul');
+var body_pag = document.getElementsByTagName('body')[0]; 
+
+btn_menu.addEventListener('click', () => {
+    menu.classList.toggle('mostrar');
+    
+    if(body_pag.style.overflow != 'hidden')
+        body_pag.style.overflow = 'hidden';
+    else
+        body_pag.style.overflow = 'visible';
+})
+
+links_menu.addEventListener('click', () => {
+    menu.classList.remove('mostrar');
+    body_pag.style.overflow = 'visible';
+})
+
 window.addEventListener('scroll', function() {
     animeScroll();
 });
