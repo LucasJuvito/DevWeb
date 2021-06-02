@@ -1,6 +1,7 @@
+/* importando fontes do google */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-/* MENU
+/* MENU DE NAVEGAÇÃO
 --------------------------------------------------------*/
 .menu-mobile{
     width: 100%;
@@ -12,7 +13,6 @@
 
 /* NAVBAR 
 ------------------------------------------------------- */
-
 #navbar{
     display: flex;
     z-index: 1000;
@@ -64,7 +64,6 @@
 
 /* BANNER 
 ------------------------------------------------------- */
-
 section#banner{
     width: 100%;
     height: 500px;
@@ -115,7 +114,6 @@ section#banner{
 
 /* CURSOS 
 ------------------------------------------------------- */
-
 section#cursos{
     display: flex;
     justify-content: center;
@@ -203,7 +201,6 @@ section#criadores{
 
 .criadores-article{
     background: rgba(255,255,255, .8);
-    
     font-size: 12px;
     padding: 15px;
     margin-bottom: 20px;
@@ -211,6 +208,7 @@ section#criadores{
     border-radius: 10px;
     box-shadow: 10px 5px 50px black;
 }
+
 .criadores-article h1{
     font-size: 16px;
     font-weight: normal;
@@ -218,6 +216,7 @@ section#criadores{
     padding-left: 12px;
     border-left: 8px solid rgb(29, 173, 24);
 }
+
 .criadores-article .image{
     position: relative;
     overflow: hidden;
@@ -227,6 +226,7 @@ section#criadores{
     height: 83px;
     border-radius: 50%;
 }
+
 .criadores-article .image img{
     position: absolute;
     left: 50%;
@@ -235,10 +235,12 @@ section#criadores{
     width: auto;
     transform: translate(-50%,-50%); 
 }
+
 .criadores-article .image img.portrait{
     width: 100%;
     height: auto;
 }
+
 .criadores-article p{
     display: flex;
     flex-direction: column;
@@ -246,6 +248,7 @@ section#criadores{
     height: 83px;
     font-size: 16px;
 }
+
 .criadores-article p .name{
     color:rgb(29, 173, 24);
     font-weight: bold;
@@ -254,7 +257,6 @@ section#criadores{
 
 /* FOOTER
 ------------------------------------------------------- */
-
 footer{
     display: flex;
     background-color: rgb(233, 233, 233);
@@ -384,6 +386,7 @@ footer{
 /*BREAKPOINTS MÁXIMOS
 ------------------------------------------*/
 @media (max-width: 520px){
+    /* navbar */
     #navbar-menu{
         display: none;
         position: absolute;
@@ -396,22 +399,18 @@ footer{
         justify-content: center;
         align-items: center;
     }
-
     #navbar-menu .nav{
         display: block;
     }
-
     #navbar-menu .nav a{
         text-align: center;
         padding: 20px 40px;
     }
-
     #navbar-menu .nav li{
         padding: 20px;
         text-align: center;
         border-bottom: 1px solid rgb(87, 87, 87);
     }
-    
     #navbar-menu-hamburguer{
         display: flex;
     }
@@ -419,6 +418,7 @@ footer{
 }
 
 @media (max-width: 900px){
+    /* footer */
     #footer-container{
         justify-content: space-around;
         width: 100%;
@@ -429,6 +429,7 @@ footer{
 }
 
 @media (max-width: 650px){
+    /* footer */
     #footer-container{
         flex-direction: column;
         width: auto;
@@ -437,19 +438,17 @@ footer{
 
 /*ESTILIZANDO O SCROLL
 ------------------------------------------*/
-
 body::-webkit-scrollbar {
     width: 9px;
 }
-  
+
 body::-webkit-scrollbar-track {
     background: rgba(173, 173, 173, 0.2);
 }
 
-    body::-webkit-scrollbar-thumb {
-
-background-color: #4d8c12;
-border-radius: 20px;
+body::-webkit-scrollbar-thumb {
+    background-color: #4d8c12;
+    border-radius: 20px;
 }
 
 /*AUXILIARES
